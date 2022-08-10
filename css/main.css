@@ -84,6 +84,62 @@ footer {
   padding-right: 1.5rem;
 }
 
+.item-a {
+  grid-area: header;
+}
+
+/* .item-b {
+  grid-area: project;
+} */
+
+.item-c {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 300px auto 50px;
+  grid-template-areas: 
+    "header header header"
+    ". . ."
+    "footer footer footer";
+  gap: 0 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1.65fr 4fr 0.90fr;
+}
+
+.item-a {
+  grid-area: header;
+}
+
+/* .item-b {
+  grid-area: project;
+} */
+
+.item-c {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 300px auto 50px;
+  grid-template-areas: 
+    "header header header"
+    ". . ."
+    "footer footer footer";
+  gap: 0 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1.65fr 4fr 0.90fr;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
